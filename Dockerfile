@@ -73,6 +73,7 @@ cd /home/nginx-php/php-$PHP_VERSION && \
 --with-config-file-scan-dir=${PHP_EXTENSION_INI_PATH} \
 --with-fpm-user=www \
 --with-fpm-group=www \
+--with-mysql \
 --with-mysqli \
 --with-pdo-mysql \
 --with-openssl \
