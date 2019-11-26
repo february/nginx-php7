@@ -114,7 +114,6 @@ make && make install && \
 cd /home/nginx-php/php-$PHP_VERSION && \
 cp php.ini-production /usr/local/php/etc/php.ini && \
 cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf && \
-cp /usr/local/php/etc/php-fpm.d/www.conf /usr/local/php/etc/php-fpm.d/www.conf && \
 rm -rf /home/nginx-php && \
 #
 # remove temp folder
