@@ -115,6 +115,9 @@ make && make install && \
 cd /home/nginx-php/php-$PHP_VERSION && \
 cp php.ini-production /usr/local/php/etc/php.ini && \
 cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf && \
+sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 60M/g' /usr/local/php/etc/php.ini && \
+sed -i 's/post_max_size = 8M/post_max_size = 60M/g' /usr/local/php/etc/php.ini && \
+sed -i 's/max_execution_time = 30/max_execution_time = 300/g' /usr/local/php/etc/php.ini && \
 rm -rf /home/nginx-php && \
 #
 # remove temp folder
